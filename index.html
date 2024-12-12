@@ -168,7 +168,7 @@
         </p>
         <br>
         <p style="font-size: 20px;">
-          2. Our benchmark containing two tasks: (a) <span style="color: rgb(16, 50, 171)">Video Captioning</span>, which evaluates high-level video understanding, and (b) <span style="color: rgb(16, 50, 171)">Language-Guided Video Instance Segmentation (LGVIS)</span>, which evaluates finegrained, pixel-level localization based on text prompts.
+          2. Our benchmark contains two tasks: (a) <span style="color: rgb(16, 50, 171)">Video Captioning</span>, which evaluates high-level video understanding, and (b) <span style="color: rgb(16, 50, 171)">Language-Guided Video Instance Segmentation (LGVIS)</span>, which evaluates finegrained, pixel-level localization based on text prompts.
         </p>
         <br>
         <p style="font-size: 20px;">
@@ -199,21 +199,51 @@
 <!-- End paper abstract -->
 
 
-<!-- Start benchmark video-->
-<section class="hero teaser">
+<!-- Highlights -->
+<section class="hero is-light is-big", style="margin-top: -35px"></section>
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3">Benchmark Tasks</h2>
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/benchmark.mp4"
-        type="video/mp4">
-      </video>
-      <!-- <h2 class="subtitle has-text-centered">
-        Dataset Sample
-      </h2> -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-fifths">
+        <br>
+        <br>
+        <h2 class="title is-3">🔥 Highlights</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-five-fifths">
+        <p style="font-size: 20px;">
+        1.  We introduce ViCaS, a <span style="color: rgb(199, 9, 9)">human-annotated</span> video dataset containing thousands of videos with detailed captions, along with pixel-precise segmentation masks for salient objects with phrase-grounding to the caption.
+        </p>
+        <br>
+        <p style="font-size: 20px;">
+          2. Our benchmark contains two tasks: (a) <span style="color: rgb(16, 50, 171)">Video Captioning</span>, which evaluates high-level video understanding, and (b) <span style="color: rgb(16, 50, 171)">Language-Guided Video Instance Segmentation (LGVIS)</span>, which evaluates finegrained, pixel-level localization based on text prompts.
+        </p>
+        <br>
+        <p style="font-size: 20px;">
+          3. We propose <span style="color: rgb(19, 101, 66)">Video-LLaVA-Seg</span>, an effective baseline architecture that can tackle both of our benchmark tasks with a single, end-to-end trained model.
+        </p>
+        <br>
+      </div>
     </div>
   </div>
+</section>
+
+
+<!-- Start benchmark video-->
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3"> Benchmark Tasks</h2>
+      </div>
+    </div>
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="static/videos/benchmark.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  <!-- </div> -->
 </section>
 <!-- End benchmark video -->
 
