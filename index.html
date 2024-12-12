@@ -246,7 +246,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Video-LLaVA-Seg</h2>
+        <h2 class="title is-3">Video-LLaVA-Seg Baseline Architecture</h2>
       </div>
     </div>
     <div class="columns is-centered ">
@@ -256,7 +256,9 @@
                 class="interpolation-image"
                 alt="Interpolate start reference image."/>
       <p class="has-text-centered">
-        The architecture for our baseline Video-LLaVA-Seg model. 
+        The vision backbone and projection MLP encode the input video frames into a set of features
+        <b>F</b><sub>sf</sub> which are concatenated with the text embeddings and input to the LLM. For Video Captioning, the output <b>F</b><sub>o</sub> is decoded into text. For
+        LG-VIS, the [SEG] token in <b>F</b><sub>o</sub> is applied to the mask decoder along with multi-scale features from the segmentation backbone.
       </p>
     </div>
   </div>
